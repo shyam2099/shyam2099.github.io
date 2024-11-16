@@ -50,9 +50,9 @@
                 </div>
                 <!-- Masthead Subheading-->
                 <div class="row mb-4">
-                    <div class="col-lg-4 ms-auto">I am a Game Developer from India with a Computer Science Engineering Background. I have been an avid gamer from around 2001 and have been programming for games since 2017.</div>
-                    <div class="col-lg-4 ms-auto">I have experience in C# & C++ using Unity and Unreal Engine primarily, but I can adapt to others quickly when required.</div>
-                    <div class="col-lg-4 ms-auto">I am a self taught musician and I like to dabble in creative fields like 3D modelling, music production, and photography.</div>
+                    <div class="col-lg-4 ms-auto">Game Developer from India with a Computer Science Engineering Background. Avid gamer from around 2001 and been programming for games since 2017.</div>
+                    <div class="col-lg-4 ms-auto">Experienced in C# & C++ using Unity and Unreal Engine primarily, but can adapt to others quickly when required.</div>
+                    <div class="col-lg-4 ms-auto">Self taught musician and dabbles in creative fields like 3D art, craft and photography.</div>
                 </div>
                 <div class="row">
                     <a href="assets/Shyam_Resume.pdf">
@@ -73,6 +73,9 @@
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
+                </div>
+                <div class="divider-custom">
+                    <h6 class="text-center text-secondary mb-0">Click to open details</h6>
                 </div>
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
@@ -195,7 +198,7 @@
                             <img class="img-fluid" src="assets/Projects/AppyMonkeys/EasySketch_Boxing.png" alt="..." />
                         </div>
                     </div>
-                    
+                    <!-->
                      <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal12">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -205,6 +208,7 @@
                             <img class="img-fluid" src="assets/Projects/AppyMonkeys/SketchpadDrawing.png" alt="..." />
                         </div>
                     </div>
+-->
                     
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal13">
@@ -229,6 +233,9 @@
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
+                </div>
+                <div class="divider-custom">
+                    <h6 class="text-center text-white mb-0">Click to open details</h6>
                 </div>
                 <!-- Projects Grid Items -->
                 <div class="row justify-content-center">
@@ -340,7 +347,6 @@
                     <!-- Footer Social Icons-->
                     <div class="mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/sam_2099_"><i class="fab fa-fw fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/sam-2099/"><i class="fab fa-fw fa-linkedin-in"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/_sam2099_/"><i class="fab fa-fw fa-instagram"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="mailto:shyam.2099@gmail.com"><i class="fab fa-regular fa-envelope"></i></a>
@@ -350,7 +356,19 @@
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Last Updated September 2024</small></div>
+            <div class="container"><small>Last Updated <script>
+                // Get the last modified date of the document
+                const lastModified = document.lastModified;
+
+                // Create a new Date object from the last modified string
+                const date = new Date(lastModified);
+                
+                // Define options to format the date as "Month Year"
+                const options = { year: 'numeric', month: 'long' };
+
+                // Use the toLocaleDateString() method to format the date
+                document.write(date.toLocaleDateString('en-US', options));
+                </script></small></div>
         </div>
 
 <!-- Project Modals-->
@@ -375,8 +393,10 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/Projects/YOLO/Level%201.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">You Only Live Once was one of the first games that I made. It was made in Unity and is a 2D side-scrolling game where you have to collect a certain number of items and avoid enemies to get access to a door and reach the next level.</p>
+                                    <div class="mb-2 text-start">
+                                    <p class="mb-4">2D side-scrolling game where you have to collect a certain number of items and avoid enemies to get access to a door and reach the next level.</p>
                                     <p class="mb-4">The name was given because of the single life that you get to complete all the levels. Each level gets significantly more difficult than the previous one.</p>
+                                    </div>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -409,7 +429,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/Projects/Limitless/Gameplay.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Limitless was a College project that I had done with a friend as part of a project. It was made in Unity is a 2D side-scrolling infinite runner. Different colored floors will increase or decrease the speed of the player, and collecting coins will add to the score.</p>
+                                    <p class="mb-4 text-start">2D side-scrolling infinite runner. Different colored floors will increase or decrease the speed of the player, and collecting coins will add to the score.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -442,8 +462,13 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/Projects/Bomberman/Menu.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">This was a self project to recreate the classic game bomberman in Unreal Engine. This is a 2 player shared screen game where the objective is to defeat the other player using the bombs as weapons.</p>
+                                    <div class="mb-2 text-start">
+                                    <p class="mb-4">Recreate the classic game bomberman in Unreal Engine. 2 player shared screen game where the objective is to defeat the other player using the bombs as weapons.</p>
                                     <p class="mb-4">Different abilities and powerups were added to change the range and effectiveness of the bombs and the player.</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <h2 class="mb-4 text-secondary">Screenshots</h2>
+                                    </div>
                                     <div class="row">
                                         <img class="img-fluid rounded mb-5" src="assets/Projects/Bomberman/Bomberman.png" alt="..." />
                                         <img class="img-fluid rounded mb-5" src="assets/Projects/Bomberman/Boom.png" alt="..." />
@@ -484,6 +509,9 @@
                                     <p class="mb-4">Working with a team, I was responsible for the Enemy AI, and the camera controls, along with helping out the others in all aspects of the game.</p>
                                     <div class="row">
                                         <a href="https://kcdxplay.itch.io/ricky-rolled"><img class="col-lg-5 img-fluid mb-5" src="assets/itch-badge-color.svg" alt="..." /></a>
+                                        <div class="mb-2">
+                                        <h2 class="mb-4 text-secondary">Screenshots</h2>
+                                    </div>
                                         <img class="img-fluid rounded mb-5" src="assets/Projects/RickyRolled/Pic1.png" alt="..." />
                                         <img class="img-fluid rounded mb-5" src="assets/Projects/RickyRolled/Pic2.png" alt="..." />
                                     </div>
@@ -525,7 +553,7 @@
                                         <p class="mb-4">Features extensive use of the Gameplay Ability System for all the spells and abilites that the player and the enemies are capable of.</p>
                                         <p class="mb-4">The abilities are also networking safe to allow the game to be played on a local server with multiple players.</p>
                                         <p class="mb-4"></p>
-                                        <h2 class="mb-4">Screenshots</h2>
+                                        <h2 class="mb-4 text-secondary">Screenshots</h2>
                                         <div>
                                             <img class="img-fluid rounded mb-5" src="assets/Projects/Aura/Gameplay1.png">
                                             <img class="img-fluid rounded mb-5" src="assets/Projects/Aura/Gameplay2.png">
@@ -572,7 +600,7 @@
                                         <p class="mb-4">Allows users to join and play with friends using Steam sessions.</p>
                                         <p class="mb-4">The game has multiple game modes like Free-for-All deathmatch, and Team based modes like deathmatch, and Capture the flag.</p>
                                         <p class="mb-4"></p>
-                                        <h2 class="mb-4">Screenshots</h2>
+                                        <h2 class="mb-4 text-secondary">Screenshots</h2>
                                         <div>
                                             <img class="img-fluid rounded mb-5" src="assets/Projects/Blaster/Start.png">
                                             <img class="img-fluid rounded mb-5" src="assets/Projects/Blaster/Boom.png">
@@ -613,15 +641,19 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/Projects/CORE/HowiLane.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">CORE was a cancelled third person MOBA inspired heavily by Epic Games' cancelled MOBA Paragon. After Paragon was shut down in April 2018, Epic Games released the assets and I was part of a team that was recreating Paragon using these assets.</p>
-                                    <p class="mb-4">On this team, I was responsible for creating the Jungle Creep AI. This includes spawn patterns and times, attack ranges, attack behaviour, and idle behaviour.</p>
-                                    <p class="mb-4">It was made with Unreal Engine, the AI was programmed using Unreal's Behaviour Trees and Environment Query System.</p>
-                                    <a href="https://www.dropbox.com/sh/r6t2z3qhpk5safg/AADMnV4EiW7j-8Nz5-NR1Vg3a?dl=0">
-                                        <button class="btn btn-secondary">
-                                            Code Samples
-                                        </button>
-                                    </a>
-                                    <h2 class="mb-4">Screenshots</h2>
+                                    <div class="text-start">
+                                        <p class="mb-4">CORE was a cancelled third person MOBA inspired heavily by Epic Games' cancelled MOBA Paragon. After Paragon was shut down in April 2018, Epic Games released the assets and I was part of a team that was recreating Paragon using these assets.</p>
+                                        <p class="mb-4">On this team, I was responsible for creating the Jungle Creep AI. This includes spawn patterns and times, attack ranges, attack behaviour, and idle behaviour.</p>
+                                        <p class="mb-4">It was made with Unreal Engine, the AI was programmed using Unreal's Behaviour Trees and Environment Query System.</p>
+                                    </div>
+                                    <div class="mb-3">
+                                        <a href="https://www.dropbox.com/sh/r6t2z3qhpk5safg/AADMnV4EiW7j-8Nz5-NR1Vg3a?dl=0">
+                                            <button class="btn btn-secondary">
+                                                Code Samples
+                                            </button>
+                                        </a>
+                                        </div>
+                                    <h2 class="mb-4 text-secondary">Screenshots</h2>
                                     <div>
                                         <img class="img-fluid rounded mb-5" src="assets/Projects/CORE/SerathJungle.png">
                                         <img class="img-fluid rounded mb-5" src="assets/Projects/CORE/CoreMap.jpg">
@@ -778,18 +810,21 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/Projects/AppyMonkeys/Blox3DWorldWalk.jpg" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <div class="mb-5">
-                                        <p class="mb-4">Voxel style 3D World Creation app.</p>
-                                        <p class="mb-4">I had done a lot of rework on the UI and the design to make it look and feel better on PC systems since this was one the most used apps built by Appy Monkeys on iOS platforms. Hence the app was first ported to the PC platform from the iOS build and then improved upon.</p>
-                                        <p class="mb-4">Updates and improvements made by the users were also incorporated into this app.</p>
-                                        <h2 class="mb-4">Screenshots</h2>
+                                    <div class="mb-4 text-start">
+                                        <p class="mb-4">Voxel style 3D World Creation app in Unity.</p>
+                                        <p class="mb-4">Reworked UI for better usability on other platforms. Ported to PC using the same.</p>
+                                        <p class="mb-4">Added updated shaders for better look of the game with dynamic moving objects like boats and fishes.</p>
+                                        <p class="mb-4">Integrated user feedback and improvements.</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <div class="mb-3 row-lg-6">
+                                            <a href="https://apps.apple.com/us/app/blox-3d-world-creator/id969480169"><img class="img-fluid" src="assets/Projects/AppyMonkeys/appstore.png" alt="..." /></a>
+                                            <a href="https://store.steampowered.com/app/1763600/Blox_3D_World/"><img class="img-fluid" src="assets/Projects/AppyMonkeys/Steam.png" alt="..." /></a>
+                                        </div>
+                                        <h2 class="mb-4 text-secondary">Screenshots</h2>
                                         <div>
                                             <img class="img-fluid rounded mb-5" src="assets/Projects/AppyMonkeys/Blox3DWorldLandscape.jpg">
                                             <img class="img-fluid rounded mb-5" src="assets/Projects/AppyMonkeys/Blox3DWorldCreator.jpg">
-                                        </div>
-                                        <div class="row-lg-6">
-                                            <a href="https://apps.apple.com/us/app/blox-3d-world-creator/id969480169"><img class="img-fluid" src="assets/Projects/AppyMonkeys/appstore.png" alt="..." /></a>
-                                            <a href="https://store.steampowered.com/app/1763600/Blox_3D_World/"><img class="img-fluid" src="assets/Projects/AppyMonkeys/Steam.png" alt="..." /></a>
                                         </div>
                                     </div>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
@@ -824,17 +859,24 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/Projects/AppyMonkeys/Claydo_Plane.jpg" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <div class="mb-5">
-                                        <p class="mb-4">Volumetric sculpting app using primitive shapes.</p>
-                                        <p class="mb-4">I was lead programmer for this app. It uses SDF compute shaders to create the polygons and then it is combined inside a volume that allows a user to create models using boolean operations. The models can then be exported out as an obj or stl and then be used in other softwares or 3D printed.</p>
-                                        <p class="mb-4">This was also the first application that Appy Monkeys has uploaded to Steam, so I was also responsible for the build and upload process to Steam.</p>
-                                        <p class="mb-4">I also ported Claydo to macOS from the PC version.</p>
-                                        <h2 class="mb-4">Screenshots</h2>
+                                    <div class="mb-5 text-start">
+                                        <p class="mb-4">Lead programmer. Volumetric sculpting app using primitive shapes built in Unity.</p>
+                                        <p class="mb-4">Uses SDF compute shaders to create the polygons and then combined inside a volume that allows a user to create models using boolean operations.</p>
+                                        <p class="mb-1 "><b>Other features worked on include:</b></p>
+                                        <p class="mb-1">- Camera controls with intuitive and smooth movement.</p>
+                                        <p class="mb-1">- Export models as .stl or .obj formats.</p>
+                                        <p class="mb-1">- Custom file type to save and load models within the app.</p>
+                                        <p class="mb-1">- MacOS port.</p>
+                                    </div>
+                                    <div class="mb-1">
+                                        <div class="mb-2">
+                                            <a href="https://claydo.app" class="btn btn-primary"> Website</a>
+                                        </div>
+                                        <h2 class="mb-4 text-secondary">Screenshots</h2>
                                         <div>
                                             <img class="img-fluid rounded mb-5" src="assets/Projects/AppyMonkeys/ClaydoBee.jpg">
                                             <img class="img-fluid rounded mb-5" src="assets/Projects/AppyMonkeys/ClaydoSplit.jpg">
                                         </div>
-                                        <a href="https://claydo.app" class="btn btn-primary"> Website</a>
                                     </div>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
@@ -868,18 +910,26 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/Projects/AppyMonkeys/Animatoon_Animate.jpg" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <div class="mb-5">
-                                        <p class="mb-4">Voxel style Animation App.</p>
-                                        <p class="mb-4">I was the lead programmer for this app. It uses voxel volumes with a rigged skeleton and allows a user to model and animate the rig without having to leave the app.</p>
-                                        <p class="mb-4">The animation has keyframing features for each controllable limb and they will interpolate between keyframes for smooth transitions from one keyframe to another.</p>
-                                        <p class="mb-4">The modelling mode will put the same model into a T-Pose and allows the user to use voxel blocks to update the model without affecting the animation.</p>
-                                        <p class="mb-4">The animation can then be exported out as a video or a .gltf file which contains the model and the animation information that can be used in any other application that has gltf support. Since gltf is not a native format used by Unity, I had to learn the gltf file format and code an exporter that uses the animation and model data that is created in Anima Toon.</p>
-                                        <h2 class="mb-4">Screenshots</h2>
+                                    <div class="mb-5 text-start">
+                                        <p class="mb-4">Voxel style Animation App built in Unity.</p>
+                                        <p class="mb-4">Lead programmer for this app. Uses voxel volumes with a rigged skeleton and allows a user to model and animate the rig without having to leave the app.</p>
+                                        <p class="mb-4">Includes keyframing, saving poses, interpolation between keyframes, and onion skinning.</p>
+                                        <p class="mb-4">A modelling mode allows users to update the model at any time without affecting animations.</p>
+                                        <p class="mb-1 "><b>Other features worked on include:</b></p>
+                                        <p class="mb-1">- Custom made rigs for various skeletons including humanoid, and quadrupedal.</p>
+                                        <p class="mb-1">- Exporting full animation via gltf format.</p>
+                                        <p class="mb-1">- Exporting current viewing animation as a video file.</p>
+                                        <p class="mb-12">- Save and share the animation in a custom built format for AnimaToon.</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <div class="mb-3">
+                                            <a href="https://animatoon.org" class="btn btn-primary">Website</a>
+                                        </div>
+                                        <h2 class="mb-4 text-secondary">Screenshots</h2>
                                         <div>
                                             <img class="img-fluid rounded mb-5" src="assets/Projects/AppyMonkeys/Animatoon_Model.jpg">
                                             <img class="img-fluid rounded mb-5" src="assets/Projects/AppyMonkeys/Animatoon_Dog.jpg">
                                         </div>
-                                        <a href="https://animatoon.org" class="btn btn-primary">Website</a>
                                     </div>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
@@ -913,18 +963,23 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/Projects/AppyMonkeys/EasySketch_Boxing.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <div class="mb-5">
-                                        <p class="mb-4">Combined Drawing and 3D posing application.</p>
-                                        <p class="mb-4">I had worked on the 3D posing half of this app. The user can use the included models or import .obj files to create a scene when can then be transferred to the drawing scene seamlessly so that it can be used as a reference for the drawing or the outlines of the drwaing directly.</p>
-                                        <p class="mb-4">I had added different shader styles for different views of the 3D models. This includes a toon shaded style to grey flat shaded mode to a silhouette mode. The camera can be positioned in any place that the user wants and the FOV of the camera can also be adjusted in a very intuitive manner.</p>
-                                        <h2 class="mb-4">Screenshots</h2>
+                                    <div class="mb-4 text-start">
+                                        <p class="mb-4">Combined Drawing and 3D posing application built in Unity.</p>
+                                        <p class="mb-4">Worked on the 3D posing half of this app. Built in humanoid model can be posed using controllers. Other obj files can be imported to add extra content. Exports back into the app in the 2D view as a new layer.</p>
+                                        <p class="mb-1"><b>Other features worked on include:</b></p>
+                                        <p class="mb-1">- Physical camera controls and safe area view to show exactly what will be taken to the 2D view as a layer.</p>
+                                        <p class="mb-1">- Multiple shading modes like toon shaded, silhouette, outline only etc.</p>
+                                        <p class="mb-1">- Automatic model manipulation controls added for imported objects during runtime.</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <div class="mb-2 row-lg-6">
+                                            <a href="https://apps.apple.com/us/app/easy-sketch-pose/id1586262843"><img class="img-fluid" src="assets/Projects/AppyMonkeys/appstore.png" alt="..." /></a>
+                                            <a href="https://store.steampowered.com/app/1810590/Easy_Sketch_Pose/"><img class="img-fluid" src="assets/Projects/AppyMonkeys/Steam.png" alt="..." /></a>
+                                        </div>
+                                        <h2 class="mb-4 text-secondary">Screenshots</h2>
                                         <div>
                                             <img class="img-fluid rounded mb-5" src="assets/Projects/AppyMonkeys/EasySketch_Crow.jpg">
                                             <img class="img-fluid rounded mb-5" src="assets/Projects/AppyMonkeys/EasySketch_Lady.jpg">
-                                        </div>
-                                        <div class="row-lg-6">
-                                            <a href="https://apps.apple.com/us/app/easy-sketch-pose/id1586262843"><img class="img-fluid" src="assets/Projects/AppyMonkeys/appstore.png" alt="..." /></a>
-                                            <a href="https://store.steampowered.com/app/1810590/Easy_Sketch_Pose/"><img class="img-fluid" src="assets/Projects/AppyMonkeys/Steam.png" alt="..." /></a>
                                         </div>
                                     </div>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
@@ -959,11 +1014,13 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/Projects/AppyMonkeys/SketchpadDrawing.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <div class="mb-5">
-                                        <p class="mb-4">2D hand drawn animation app</p>
+                                    <div class="mb-3 text-start">
+                                        <p class="mb-4">2D hand drawn animation app.</p>
                                         <p class="mb-4">This app allows to create a 2D hand drawn animation from scratch.</p>
-                                        <p class="mb-4">I worked on Updating UI and making better workflow for this app.</p>
-                                        <h2 class="mb-4">Screenshots</h2>
+                                        <p class="mb-4">Worked on Updating UI and making better workflow for this app.</p>
+                                    </div>
+                                    <div class="mb-5">
+                                        <h2 class="mb-4 text-secondary">Screenshots</h2>
                                         <div>
                                             <img class="img-fluid rounded mb-5" src="assets/Projects/AppyMonkeys/Sketchpad_cliff.jpg">
                                             <img class="img-fluid rounded mb-5" src="assets/Projects/AppyMonkeys/Sketchpad_eyes.jpg">
@@ -1002,15 +1059,24 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/Projects/TeenPatti/Splash.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <div class="mb-5">
-                                        <p class="mb-4">Teen Patti style Casino game with in-game currency and economy.</p>
-                                        <p class="mb-4">Worked on client side programming, UI, sounds, animations, and game feel.</p>
-                                        <h2 class="mb-4">Screenshots</h2>
+                                    <div class="mb-2 text-start">
+                                        <p class="mb-4">Lead programmer. Teen Patti style Casino game with in-game currency and economy.</p>
+                                        <p class="mb-1"><b>Worked on:</b></p>
+                                        <p class="mb-1">- Client Side Gameplay.</p>
+                                        <p class="mb-1">- UI setup.</p>
+                                        <p class="mb-1">- Sounds and voices.</p>
+                                        <p class="mb-1">- Animations.</p>
+                                        <p class="mb-1">- Localization.</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <div class="mb-3">
+                                            <a href="https://teenpatti.dynamicnext.com/" class="btn btn-primary">Website</a>
+                                        </div>
+                                        <h2 class="mb-4 text-secondary">Screenshots</h2>
                                         <div>
                                             <img class="img-fluid rounded mb-5" src="assets/Projects/TeenPatti/Menu.png">
                                             <img class="img-fluid rounded mb-5" src="assets/Projects/TeenPatti/In_game.png">
                                         </div>
-                                        <a href="https://teenpatti.dynamicnext.com/" class="btn btn-primary">Website</a>
                                     </div>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
